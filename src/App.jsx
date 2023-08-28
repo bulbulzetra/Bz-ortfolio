@@ -23,7 +23,7 @@ const App = () => {
       <HireMe/>
       <Project />
       <Contact />
-      <GetInTouch/>
+     
       <Footer />
     </div>
   );
