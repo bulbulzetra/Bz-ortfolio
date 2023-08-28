@@ -14,35 +14,22 @@ const Project = () => {
   const projects = [
     {
       img: project1,
-      name: "Movie App",
-      github_link: "https://github.com/Sridhar-C-25",
-      live_link: "https://myreactflix.netlify.app",
+      name: "Kids Camp",
+      github_link: "https://github.com/bulbulzetra/kids-camp-client-site",
+      live_link: "https://kida-camp.netlify.app/",
     },
     {
       img: project2,
-      name: "Job search Web App",
-      github_link: "https://github.com/Sridhar-C-25/jobsearchapp",
-      live_link: "https://myjobsearch.netlify.app",
+      name: "sushifushi",
+      github_link: "https://github.com/bulbulzetra/sushifushi-client-site",
+      live_link: "https://sushifushi.netlify.app/",
     },
     {
       img: project3,
-      name: "Highking",
-      github_link: "https://github.com/Sridhar-C-25/highking",
-      live_link: "https://highking01.netlify.app",
-    },
-    {
-      img: project4,
-      name: "React Nav",
-      github_link:
-        "https://github.com/Sridhar-C-25/reacttailwindnavbar-with-dropdown",
-      live_link: "https://reacttailwindnavbar.netlify.app",
-    },
-    {
-      img: project5,
-      name: "Vue Country",
-      github_link: "https://github.com/Sridhar-C-25",
-      live_link: "https://vuecountry05.netlify.app",
-    },
+      name: "Toy shop",
+      github_link: "https://github.com/bulbulzetra/toy-marketplace-client-site",
+      live_link: "https://toy-stall.netlify.app/",
+    }
   ];
   return (
     <section id="projects" className="py-10 text-white">
@@ -50,13 +37,13 @@ const Project = () => {
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Projects</span>
         </h3>
-        <p className="text-gray-400 mt-3 text-lg">My awesome works</p>
+       
       </div>
       <br />
-      <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
-        <div className="lg:w-2/3 w-full">
+      <div className=" px-5 mx-auto items-center ">
+        <div className="lg:w-full w-full">
           <Swiper
-            slidesPerview={1.2}
+            slidesPerview={1}
             spaceBetween={20}
             breakpoints={{
               768: {
@@ -65,7 +52,7 @@ const Project = () => {
             }}
             loop={true}
             autoplay={{
-              delay: 3000,
+              delay: 6000,
             }}
             pagination={{
               clickable: true,
@@ -90,7 +77,7 @@ const Project = () => {
                       target="_blank"
                       className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
                     >
-                      Live Demo
+                      Live Link
                     </a>
                   </div>
                 </div>
@@ -98,9 +85,9 @@ const Project = () => {
             ))}
           </Swiper>
         </div>
-        <div className="lg:block hidden">
+        {/* <div className="lg:block hidden">
           <img src={project_person} alt="" />
-        </div>
+        </div> */}
       </div>
     </section>
   );

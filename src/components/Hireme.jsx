@@ -1,6 +1,6 @@
 import React from "react";
 import hireMe from "../assets/images/hireMe.png";
-const Hireme = () => {
+const HireMe = () => {
   return (
     <section id="hireme" className="py-10 px-3 text-white">
       <div className="text-center">
@@ -32,4 +32,4 @@ const Hireme = () => {
   );
 };
 
-export default Hireme;
+export default HireMe;
